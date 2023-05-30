@@ -68,6 +68,22 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ctrl_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <74 14>;
+            layers = <1>;
+        };
+
+        alt_tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <35 14>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
