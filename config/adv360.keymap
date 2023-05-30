@@ -50,26 +50,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        alt_tab: alt_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_TAB";
-            bindings =
-                <&ctrl_tab>,
-                <&kp LA(TAB)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-        ctrl_tab: ctrl_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_TAB";
-            bindings =
-                <&kp TAB>,
-                <&kp LC(TAB)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
     };
 
     macro_windows_mode: macro_windows_mode {
@@ -107,11 +87,11 @@
 
         layer_wiindows {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&alt_tab  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &kp LGUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans          &trans  &kp LCTRL  &trans                    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &kp LGUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &kp LCTRL  &trans                    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
