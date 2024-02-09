@@ -46,6 +46,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mt_tap_pref: mt_tap_pref {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TAP_PREF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     macro_windows_mode: macro_windows_mode {
@@ -82,11 +92,11 @@
 
         layer_wiindows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &mt LC(LEFT_GUI) LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &kp LCTRL  &trans                  &trans                     &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &mt_tap_pref LC(LEFT_GUI) LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &kp LCTRL  &trans                  &trans                              &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
