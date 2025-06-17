@@ -96,17 +96,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &mt_tap_pref LC(LEFT_GUI) LEFT_GUI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &kp LCTRL  &trans                  &trans                              &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &kp LCTRL  &trans                  &kp INS                             &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         gaming {
             bindings = <
-&trans  &mt NUMBER_1 F1  &mt NUMBER_2 F2  &mt NUMBER_3 F3  &mt NUMBER_4 F4  &mt NUMBER_5 F5  &trans                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &kp UP_ARROW     &trans           &trans           &trans           &trans                                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW   &kp DOWN         &kp RIGHT        &trans           &trans           &trans     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans           &trans           &trans           &trans           &trans     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans           &trans           &trans                            &kp SPACE  &trans  &trans                  &kp PAGE_DOWN  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &mt NUMBER_1 F1  &mt NUMBER_2 F2  &mt NUMBER_3 F3  &mt NUMBER_4 F4  &mt NUMBER_5 F5  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &kp UP_ARROW     &trans           &trans           &trans           &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW   &kp DOWN         &kp RIGHT        &trans           &trans           &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans           &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans                            &kp SPACE  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
